@@ -1,0 +1,205 @@
+/*---------------BASE--------------*/
+@font-face {
+    font-family: 'icomoon';
+    src:  url('fonts/icomoon.eot?4a7mq1');
+    src:  url('fonts/icomoon.eot?4a7mq1#iefix') format('embedded-opentype'),
+      url('fonts/icomoon.ttf?4a7mq1') format('truetype'),
+      url('fonts/icomoon.woff?4a7mq1') format('woff'),
+      url('fonts/icomoon.svg?4a7mq1#icomoon') format('svg');
+    font-weight: normal;
+    font-style: normal;
+    font-display: block;
+}
+
+i, .icomoon-liga {
+    cursor: pointer;
+    /* use !important to prevent issues with browser extensions that change fonts */
+    font-family: 'icomoon' !important;
+    font-style: normal;
+    font-weight: normal;
+    font-variant: normal;
+    text-transform: none;
+    line-height: 1;
+    
+    /* Enable Ligatures ================ */
+    letter-spacing: 0;
+    -webkit-font-feature-settings: "liga";
+    -moz-font-feature-settings: "liga=1";
+    -moz-font-feature-settings: "liga";
+    -ms-font-feature-settings: "liga" 1;
+    font-feature-settings: "liga";
+    -webkit-font-variant-ligatures: discretionary-ligatures;
+    font-variant-ligatures: discretionary-ligatures;
+  
+    /* Better Font Rendering =========== */
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+
+*{
+    box-sizing: border-box;
+    font-family: 'Raleway', sans-serif;
+}
+
+a{
+    color: white;
+    text-decoration: none;
+}
+
+html{
+    font-size: 62.5%;
+}
+
+body{
+    font-size: 1.6rem;
+    margin: 0;
+    height: 100vh;
+    background: rgb(0,207,149);
+    background: linear-gradient(180deg, rgba(0,207,149,1) 0%, rgba(202,88,255,1) 100%) no-repeat;
+}
+
+
+
+.main-header{
+    width: 100vw;
+    height: 80px;
+    display: grid;
+    grid-template-columns: 2fr 8fr 1fr 1fr;
+    grid-template-rows: 80px;
+
+    border-bottom: 1px white solid;
+}
+
+.header__img{
+    height: 60px;
+    margin: 10px;
+    cursor: pointer;
+}
+
+.header__img--logo{
+    grid-column: 1 / span 1;
+    justify-self: flex-end;
+}
+
+.header__img--profile{
+    grid-column: 3 / span 1;
+    justify-self: flex-end;
+}
+
+.header__subtitle{
+    grid-column: 4 / span 1;
+    margin: auto 0;
+}
+
+.login__container{
+    width: 400px;
+    margin: 50px auto;
+    max-height: calc(100vh - 200px);
+    padding: 2em;
+
+    color: white;
+    background-color: rgba(255, 255, 255, 0.144);
+    border: 2px solid white;
+    border-radius: 40px;
+    -webkit-box-shadow: 0px 25px 43px -5px rgba(0,0,0,0.25);
+    -moz-box-shadow: 0px 25px 43px -5px rgba(0,0,0,0.25);
+    box-shadow: 0px 25px 43px -5px rgba(0,0,0,0.25);
+}
+.login__title{
+    font-weight: 600;
+    margin-bottom: 50px;
+    text-align: center;
+}
+
+.login__input{
+    color: white;
+    padding: 10px;
+    width: 100%;
+    border: none;
+    background-color: transparent;
+    border-bottom: 2px solid white;
+    outline: none;
+}
+
+.login__input::placeholder{
+    color: white;
+}
+
+.login__input--buttom{
+    width: 70%;
+    padding: 13px 0;
+    font-size: 1em;
+    margin-left: 15%;
+    color: white;
+    border: none;
+    background-color: rgba(255, 255, 255, 0.226);
+    cursor: pointer;
+    border-radius: 25px;
+    transition: 450ms background-color;
+}
+
+.login__input--buttom:hover{
+    background-color: rgba(255, 255, 255, 0.363);
+}
+
+.login__social-media{
+    margin: 60px 0;
+}
+
+.login__form div{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    justify-items: center;
+}
+
+
+.login__input--icon-google, .login__input--icon-twitter{
+    padding: 0;
+    border: none;
+    cursor: pointer;
+    position: relative;
+}
+
+.login__input--icon-google a, .login__input--icon-twitter a{
+    margin-left: 40px;
+}
+
+.login__input--icon-google:hover .icon-google:before{
+    color: #fbbc05;
+}
+
+.login__input--icon-twitter:hover .icon-twitter:before{
+    color: #08a0e9;
+}
+
+.icon-google:before, .icon-twitter:before{
+    margin: 10px;
+    font-size: 1.2em;
+    position: absolute;
+    left: 0;
+    top: -10px;
+    transition: 450ms all;
+}
+
+.icon-google:before{
+    content: "\ea88";
+}
+
+.icon-twitter:before {
+    content: "\ea96";
+}
+
+.signup{
+    text-align: center;
+}
+
+footer{
+    width: 100%;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    justify-items: center;
+    border-top: 1px solid white;
+    position: absolute;
+    bottom: 0;
+}

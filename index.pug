@@ -1,0 +1,179 @@
+doctype html
+<!DOCTYPE html>
+html(lang="es")
+    head
+        meta(charset="UTF-8")
+        meta(name="viewport", content="width=device-width, initial-scale=1.0")
+        link(rel="stylesheet", href="./style.css")
+        
+        title Platzi - video
+    body
+        header.header
+            img.header__logo(src="https://raw.githubusercontent.com/platzi/PlatziVideo/feature/react/src/assets/static/logo-platzi-video-BW2.png", alt="logo-pltzi-video")
+            .header__menu
+                .header__menu--profile 
+                    i.far.fa-user
+                        ul
+                            li
+                                a(href="#") Cuenta
+                            li
+                                a(href="#") Cerrar sesión
+                    h4 Perfil
+        .main
+            form(action="#")
+                label.main__title(for="search") ¿Qué quieres ver hoy?
+                input.input(type="text" id="search" placeholder="Buscar...") 
+            
+            section.carousel
+                h2.carousel__subtitle Mi lista
+                .carousel__container
+                    .carousel-card
+                        img.carousel-card__img(src="https://images.pexels.com/photos/3849167/pexels-photo-3849167.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500", alt="people")
+                        .carousel-card__details
+                            div
+                                i.fas.fa-play.carousel-item__details--icon
+                                i.fas.fa-plus-circle.carousel-item__details--icon
+                            h3.carousel-item__details--title Título descriptivo
+                            p.carousel-item__details--subtitle 28/10/2020 200+ 278 minutes
+
+                    .carousel-card
+                        img.carousel-card__img(src="https://images.pexels.com/photos/3819950/pexels-photo-3819950.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500", alt="people")
+                        .carousel-card__details
+                            div
+                                i.fas.fa-play.carousel-item__details--icon
+                                i.fas.fa-plus-circle.carousel-item__details--icon
+                            h3.carousel-item__details--title Título descriptivo
+                            p.carousel-item__details--subtitle 28/10/2020 200+ 278 minutes
+
+                    .carousel-card
+                        img.carousel-card__img(src="https://images.pexels.com/photos/3802666/pexels-photo-3802666.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500", alt="people")
+                        .carousel-card__details
+                            div
+                                i.fas.fa-play.carousel-item__details--icon
+                                i.fas.fa-plus-circle.carousel-item__details--icon
+                            h3.carousel-item__details--title Título descriptivo
+                            p.carousel-item__details--subtitle 28/10/2020 200+ 278 minutes
+
+                    .carousel-card
+                        img.carousel-card__img(src="https://images.pexels.com/photos/3848484/pexels-photo-3848484.jpeg?auto=compress&cs=tinysrgb&h=750&w=1260", alt="people")
+                        .carousel-card__details
+                            div
+                                i.fas.fa-play.carousel-item__details--icon
+                                i.fas.fa-plus-circle.carousel-item__details--icon
+                            h3.carousel-item__details--title Título descriptivo
+                            p.carousel-item__details--subtitle 28/10/2020 200+ 278 minutes
+
+                    .carousel-card
+                        img.carousel-card__img(src="https://images.pexels.com/photos/3828240/pexels-photo-3828240.jpeg?auto=compress&cs=tinysrgb&h=750&w=1260", alt="people")
+                        .carousel-card__details
+                            div
+                                i.fas.fa-play.carousel-item__details--icon
+                                i.fas.fa-plus-circle.carousel-item__details--icon
+                            h3.carousel-item__details--title Título descriptivo
+                            p.carousel-item__details--subtitle 28/10/2020 200+ 278 minutes
+
+                                        .carousel-card
+                        img.carousel-card__img(src="https://images.pexels.com/photos/2096697/pexels-photo-2096697.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260", alt="people")
+                        .carousel-card__details
+                            div
+                                i.fas.fa-play.carousel-item__details--icon
+                                i.fas.fa-plus-circle.carousel-item__details--icon
+                            h3.carousel-item__details--title Título descriptivo
+                            p.carousel-item__details--subtitle 28/10/2020 200+ 278 minutes
+                    
+                    .carousel-card
+                        img.carousel-card__img(src="https://images.pexels.com/photos/3608622/pexels-photo-3608622.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500", alt="people")
+                        .carousel-card__details
+                            div
+                                i.fas.fa-play.carousel-item__details--icon
+                                i.fas.fa-plus-circle.carousel-item__details--icon
+                            h3.carousel-item__details--title Título descriptivo
+                            p.carousel-item__details--subtitle 28/10/2020 200+ 278 minutes
+
+                    .carousel-card
+                        img.carousel-card__img(src="https://images.pexels.com/photos/3789885/pexels-photo-3789885.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500", alt="people")
+                        .carousel-card__details
+                            div
+                                i.fas.fa-play.carousel-item__details--icon
+                                i.fas.fa-plus-circle.carousel-item__details--icon
+                            h3.carousel-item__details--title Título descriptivo
+                            p.carousel-item__details--subtitle 28/10/2020 200+ 278 minutes
+
+
+            section.carousel
+                h2.carousel__subtitle Tendencias
+                .carousel__container
+                    .carousel-card
+                        img.carousel-card__img(src="https://images.pexels.com/photos/2096697/pexels-photo-2096697.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260", alt="people")
+                        .carousel-card__details
+                            div
+                                i.fas.fa-play.carousel-item__details--icon
+                                i.fas.fa-plus-circle.carousel-item__details--icon
+                            h3.carousel-item__details--title Título descriptivo
+                            p.carousel-item__details--subtitle 28/10/2020 200+ 278 minutes
+                    
+                    .carousel-card
+                        img.carousel-card__img(src="https://images.pexels.com/photos/3608622/pexels-photo-3608622.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500", alt="people")
+                        .carousel-card__details
+                            div
+                                i.fas.fa-play.carousel-item__details--icon
+                                i.fas.fa-plus-circle.carousel-item__details--icon
+                            h3.carousel-item__details--title Título descriptivo
+                            p.carousel-item__details--subtitle 28/10/2020 200+ 278 minutes
+
+                    .carousel-card
+                        img.carousel-card__img(src="https://images.pexels.com/photos/3789885/pexels-photo-3789885.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500", alt="people")
+                        .carousel-card__details
+                            div
+                                i.fas.fa-play.carousel-item__details--icon
+                                i.fas.fa-plus-circle.carousel-item__details--icon
+                            h3.carousel-item__details--title Título descriptivo
+                            p.carousel-item__details--subtitle 28/10/2020 200+ 278 minutes
+
+                    .carousel-card
+                        img.carousel-card__img(src="https://images.pexels.com/photos/3849167/pexels-photo-3849167.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500", alt="people")
+                        .carousel-card__details
+                            div
+                                i.fas.fa-play.carousel-item__details--icon
+                                i.fas.fa-plus-circle.carousel-item__details--icon
+                            h3.carousel-item__details--title Título descriptivo
+                            p.carousel-item__details--subtitle 28/10/2020 200+ 278 minutes
+
+                    .carousel-card
+                        img.carousel-card__img(src="https://images.pexels.com/photos/3819950/pexels-photo-3819950.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500", alt="people")
+                        .carousel-card__details
+                            div
+                                i.fas.fa-play.carousel-item__details--icon
+                                i.fas.fa-plus-circle.carousel-item__details--icon
+                            h3.carousel-item__details--title Título descriptivo
+                            p.carousel-item__details--subtitle 28/10/2020 200+ 278 minutes
+
+                    .carousel-card
+                        img.carousel-card__img(src="https://images.pexels.com/photos/3802666/pexels-photo-3802666.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500", alt="people")
+                        .carousel-card__details
+                            div
+                                i.fas.fa-play.carousel-item__details--icon
+                                i.fas.fa-plus-circle.carousel-item__details--icon
+                            h3.carousel-item__details--title Título descriptivo
+                            p.carousel-item__details--subtitle 28/10/2020 200+ 278 minutes
+
+                    .carousel-card
+                        img.carousel-card__img(src="https://images.pexels.com/photos/3848484/pexels-photo-3848484.jpeg?auto=compress&cs=tinysrgb&h=750&w=1260", alt="people")
+                        .carousel-card__details
+                            div
+                                i.fas.fa-play.carousel-item__details--icon
+                                i.fas.fa-plus-circle.carousel-item__details--icon
+                            h3.carousel-item__details--title Título descriptivo
+                            p.carousel-item__details--subtitle 28/10/2020 200+ 278 minutes
+
+        footer
+            p
+                a(href="#") Términos de uso
+            p
+                a(href="#") Declaración de privacidad
+            p
+                a(href="#") Centro de ayuda
+
+
+            
+        script(src="https://kit.fontawesome.com/e9837d6fe2.js", crossorigin="anonymous")

@@ -1,0 +1,21 @@
+{
+  "name": "frontend-developer",
+  "version": "0.0.1",
+  "description": "Curso frontend developer -Platzi- Carrera de JavaScript https://platzi.com/clases/frontend-developer/",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "Curso",
+    "Javascript",
+    "platzi"
+  ],
+  "author": "Angelo Zambrano",
+  "license": "MIT",
+  "devDependencies": {
+    "pug": "^2.0.4",
+    "pug-cli": "^1.0.0-alpha6",
+    "stylus": "^0.54.7"
+  }
+}

@@ -1,0 +1,162 @@
+
+*{
+    box-sizing: border-box;
+    font-family: 'Raleway', sans-serif;
+}
+
+a{
+    color: white;
+    text-decoration: none;
+}
+
+html{
+    font-size: 62.5%;
+}
+
+body{
+    font-size: 1.6rem;
+    margin: 0;
+    height: 100vh;
+    background: rgb(0,207,149);
+    background: linear-gradient(180deg, rgba(0,207,149,1) 0%, rgba(202,88,255,1) 100%) no-repeat;
+}
+
+
+/*HEADER---------------------------------*/
+.main-header{
+    width: 100vw;
+    height: 80px;
+    display: grid;
+    grid-template-columns: 2fr 8fr 1fr 1fr;
+    grid-template-rows: 80px;
+
+    border-bottom: 1px white solid;
+}
+
+.header__img{
+    height: 60px;
+    margin: 10px;
+    cursor: pointer;
+}
+
+.header__img--logo{
+    grid-column: 1 / span 1;
+    justify-self: flex-end;
+}
+
+.header__img--profile{
+    grid-column: 3 / span 1;
+    justify-self: flex-end;
+}
+
+.header__subtitle{
+    grid-column: 4 / span 1;
+    margin: auto 0;
+}
+
+/*FORM---------------------------------------*/
+
+.signup__container{
+    width: 400px;
+    margin: 50px auto;
+    min-height: calc(100vh - 280px);
+    padding: 2em;
+
+    color: white;
+    background-color: rgba(255, 255, 255, 0.144);
+    border: 2px solid white;
+    border-radius: 40px;
+    -webkit-box-shadow: 0px 25px 43px -5px rgba(0,0,0,0.25);
+    -moz-box-shadow: 0px 25px 43px -5px rgba(0,0,0,0.25);
+    box-shadow: 0px 25px 43px -5px rgba(0,0,0,0.25);
+}
+.signup__title{
+    font-weight: 600;
+    margin: 70px 0 70px 10px;
+}
+
+.signup__input{
+    color: white;
+    padding: 10px;
+    width: 100%;
+    border: none;
+    background-color: transparent;
+    border-bottom: 2px solid white;
+    outline: none;
+}
+
+.signup__input::placeholder{
+    color: white;
+}
+
+.signup__input--buttom{
+    padding: 13px 0;
+    font-size: 1em;
+    color: white;
+    border: none;
+    background-color: rgba(255, 255, 255, 0.226);
+    cursor: pointer;
+    border-radius: 25px;
+    transition: 450ms background-color;
+}
+
+.signup__input--buttom:hover{
+    background-color: rgba(255, 255, 255, 0.363);
+}
+
+
+
+.login__input--icon-google, .login__input--icon-twitter{
+    padding: 0;
+    border: none;
+    cursor: pointer;
+    position: relative;
+}
+
+.login{
+    font-size: 0.8em;
+    margin: 50px 0 18px 0;
+    text-align: center;
+}
+
+/*FOOTER----------------------------------*/
+
+footer{
+    width: 100%;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    justify-items: center;
+    border-top: 1px solid white;
+    position: absolute;
+    bottom: 0;
+}
+
+@media only screen and (max-width: 767.98px){
+    .header__img--logo{
+        grid-column: 1 / span 4;
+        justify-self: center;
+    }
+
+    .header__img--profile, .header__subtitle{
+        display: none;
+    }
+}
+
+@media only screen and (max-width: 575.98px){
+    .signup__container{
+        width: 100%;
+        padding: 50px;
+        border: none;
+        background-color: transparent;
+        box-shadow: none;
+    }
+
+    footer{
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr 1fr 1fr;
+    }
+
+    footer p{
+        margin: 5px 0;
+    }
+}
